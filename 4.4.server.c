@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Qilazainuddin19 
-Syeddooo
-/
-Lab-Assignment
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Lab-Assignment/4.4server.c
-@Syeddooo
-Syeddooo first commit
-Latest commit c584a83 3 hours ago
- History
- 1 contributor
-63 lines (52 sloc)  1.16 KB
-
 #include <stdio.h>
 #include <arpa/inet.h>
 #include <unistd.h>
@@ -73,7 +45,7 @@ int main(){
 	bzero(&server, sizeof(server));
 
 	server.sin_family = AF_INET;
-	server.sin_addr.s_addr = inet_addr("192.168.56.5");
+	server.sin_addr.s_addr = inet_addr("192.168.56.4");
 	server.sin_port = htons(8888);
 
 	//connect client socket to server socket
